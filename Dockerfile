@@ -11,7 +11,7 @@
 FROM ubuntu:xenial
 
 RUN apt-get update && \
-    apt-get install -y software-properties-common libglib2.0 libglu1-mesa libgomp1 zlib1g && \
+    apt-get install -y software-properties-common libglib2.0 libglu1-mesa libgomp1 zlib1g wget vim && \
     apt-get update
 
 ## install Agisoft Photoscan 1.3
