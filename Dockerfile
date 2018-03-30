@@ -19,7 +19,7 @@ RUN wget --directory-prefix=/usr/local http://download.agisoft.com/photoscan-pro
 (cd /usr/local && tar zxvf photoscan-pro_1_3_0_amd64.tar.gz) ;\
 (cd /usr/local/bin && ln -s ../photoscan-pro/photoscan-pro.sh) ;\
 rm -f /usr/local/photoscan-pro_1_3_0_amd64.tar.gz ;\
-dpkg-reconfigure locales
+dpkg-reconfigure locales ;\
 chmod 755 /usr/local//photoscan-pro/ ;\
 chmod 755 /usr/local//photoscan-pro/*
 #chmod 755 /usr/local/bin/photoscan-pro.sh
