@@ -11,10 +11,10 @@
 FROM ubuntu:xenial
 
 RUN apt-get update && \
+    apt-get -y upgrade && \
     apt-get install -y software-properties-common libglib2.0 libqt5gui5 libgtk2.0-0 libglu1-mesa libgomp1 zlib1g && \
-    apt-get install -y language-pack-en language-pack-en-base wget vim && \
-    apt-get update
-
+    apt-get install -y language-pack-en language-pack-en-base wget vim 
+    
 ## install Agisoft Photoscan 1.3
 RUN wget --directory-prefix=/usr/local http://download.agisoft.com/photoscan-pro_1_3_0_amd64.tar.gz ;\
 (cd /usr/local && tar zxvf photoscan-pro_1_3_0_amd64.tar.gz) ;\
