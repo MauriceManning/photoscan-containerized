@@ -25,5 +25,5 @@ chmod 755 /usr/local//photoscan-pro/ ;\
 chmod 755 /usr/local//photoscan-pro/*
 #chmod 755 /usr/local/bin/photoscan-pro.sh
 
-ENTRYPOINT ["photoscan13"]
+ENTRYPOINT ["/usr/local/photoscan-pro/photoscan.sh"]
 CMD ["-h"]
