@@ -16,7 +16,7 @@ RUN apt-get update && \
     apt-get install -y language-pack-en language-pack-en-base wget vim 
     
 ## install Agisoft Photoscan 1.3
-RUN wget --directory-prefix=/usr/local http://download.agisoft.com/photoscan-pro_1_3_0_amd64.tar.gz ;\
+RUN wget --directory-prefix=/usr/local http://download.agisoft.com/photoscan-pro_1_4_1_amd64.tar.gz ;\
 (cd /usr/local && tar zxvf photoscan-pro_1_3_0_amd64.tar.gz) ;\
 (cd /usr/local/bin && ln -s ../photoscan-pro/photoscan-pro.sh) ;\
 rm -f /usr/local/photoscan-pro_1_3_0_amd64.tar.gz ;\
