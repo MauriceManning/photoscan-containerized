@@ -13,7 +13,7 @@ FROM ubuntu:xenial
 RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y software-properties-common libglib2.0 libqt5gui5 libgtk2.0-0 libglu1-mesa libgomp1 zlib1g && \
-    apt-get install -y  libqxcb libqt5x11extras5 libqt5gui5 && \
+    apt-get install -y  libxcb-image0 libqt5x11extras5 libqt5gui5 && \
     apt-get install -y language-pack-en language-pack-en-base wget vim 
     
 ## install Agisoft Photoscan 1.3
