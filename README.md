@@ -1,14 +1,15 @@
-# photoscan13-containerized
+# photoscan-containerized
 Photoscan in Singularity
+currently running Agisoft Photoscan 1.4.1
 
 
 ```bash
-git clone https://github.com/mauricemanning/photoscan13-containerized
-cd photoscan13-containerized
-docker build --rm --tag photoscan13 .
-docker tag photoscan13:latest mmmanning/photoscan13:latest
-docker push mmmanning/photoscan13:latest
+git clone https://github.com/mauricemanning/photoscan-containerized
+cd photoscan-containerized
+docker build --rm --tag photoscan .
+docker tag photoscan:latest mmmanning/photoscan:latest
+docker push mmmanning/photoscan:latest
 docker images
-singularity pull docker://mmmanning/photoscan13:latest
-singularity exec photoscan13.img /usr/local/photoscan-pro/photoscan.sh --help -i
+singularity pull docker://mmmanning/photoscan:latest
+singularity exec photoscan.img /usr/local/photoscan-pro/photoscan.sh --help -i
 ```
