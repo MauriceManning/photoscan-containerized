@@ -6,9 +6,9 @@
 
 ## Built using Ubuntu 16.04 LTS (xenial) since that is one of the
 ## targets available in PPA and is a Long Term Support (LTS)
-## https://wiki.ubuntu.com/Releases
+## https://wiki.ubuntu.com/Releases  ubuntu:latest . FROM ubuntu:xenial
 
-FROM ubuntu:xenial
+FROM ubuntu:latest
 
 RUN apt-get update && \
     apt-get -y upgrade && \
